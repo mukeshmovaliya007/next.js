@@ -1,4 +1,5 @@
 "use client";
+import Link from "next/link";
 import { useRouter } from "next/navigation";
 
 const About = () =>{
@@ -10,8 +11,11 @@ const About = () =>{
     return (
         <div>
             <h1>About Us</h1>
-            <button onClick={() => navigation("/")}>Go To Home Page</button>
-            <button onClick={() => navigation("/login")}>Go To Login Page</button>
+            <button onClick={() => navigation("/")}>Go To Home Page</button>            
+            <br /><br />
+            <Link href="/about/aboutcollege"> Go to College Page</Link>
+            <br /><br />
+            <Link href="/about/aboutstudent"> Go to Student Page</Link>
         </div>
     )
 }
