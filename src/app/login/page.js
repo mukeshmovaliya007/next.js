@@ -1,12 +1,9 @@
 "use client";
-import { useRouter } from "next/navigation";
-const Login  = () =>{
-
-    const router = useRouter();
+import Link from "next/link";
+const Login  = () =>{    
     return (
         <div>
-            <h1>Login Page</h1>
-            <button onClick={() => router.push("/")}>Go To Home Page</button>
+            <h1 className="heading">Login Page</h1>            
         </div>
     )
 }

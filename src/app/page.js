@@ -2,14 +2,20 @@
 import Link from "next/link";
 import styles from "./page.module.css";
 export default function Home() {  
+  
   return (
     <div className={styles.page}>
-      <main className={styles.main}>
-        <h1>Demo</h1>
-       <Link href="/login"> Go TO Login Page</Link>
-       <br />
-       <br />
-       <Link href="/about"> Go TO About Us Page</Link>       
+      <main className={styles.main}>       
+          <ul className="login-menu">
+              <li><h4>Demo</h4></li>
+              <li>
+                  <Link href="/">Home</Link>
+              </li>
+              <li>
+                  <Link href="/login">Login Main</Link>
+              </li>
+              
+          </ul>   
       </main>     
     </div>
   );
